@@ -1,10 +1,10 @@
 <?php
 
-namespace goldenFeathers\hw3\src\controllers;
+namespace goldenFeathers\hw4\src\controllers;
 require_once("./src/controllers/Adapter.php");
 
-use goldenFeathers\hw3\src\views as views;
-use goldenFeathers\hw3\src\models as models;
+use goldenFeathers\hw4\src\views as views;
+use goldenFeathers\hw4\src\models as models;
 
 class LandingAdapter extends Adapter
 {
@@ -12,9 +12,7 @@ class LandingAdapter extends Adapter
     private $model;
 
   function run(){
-    $genres = $this->model->getGenres();
-    $reviews = $this->model->getReviews();
-    $this->view->set($genres, $reviews);
+    $this->view->set();
     $this->view->render();
   }
 

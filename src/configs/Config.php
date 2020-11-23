@@ -1,6 +1,6 @@
 <?php
 
-namespace coolNameForYourGroup\hw3\src\configs;
+namespace coolNameForYourGroup\hw4\src\configs;
 // add your own credentials and password if needed
 // we did not add any credentials to our database
 define("HOST", 'localhost');

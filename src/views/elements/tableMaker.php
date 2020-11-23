@@ -1,5 +1,5 @@
 <?php
-namespace coolNameForYourGroup\hw3\src\views\elements;
+namespace goldenFeathers\hw4\src\views\elements;
 
 ?>
 <table>

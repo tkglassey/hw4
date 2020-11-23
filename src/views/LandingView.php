@@ -1,6 +1,6 @@
 <?php
 
-namespace goldenFeathers\hw3\src\views;
+namespace goldenFeathers\hw4\src\views;
 
 require_once("View.php");
 
@@ -38,22 +38,11 @@ class LandingView extends View{
     require_once("./src/views/layouts/header.php");
     #print closing a tag and closing header1 tag. if we were in the Genre Page then we'd print the genre name then close the a tag
     ?></h1><?php
-    require_once("./src/views/elements/tableMaker.php"); #this sets up the table for us. we can use it again in
-    echo "<li>[<a href=\"./index.php?c=addGenre\">New Genre</a>]</li>";
-    for($i = 0; $i < count($this->genres); $i++){
-      echo $this->formatGenreItem($this->genres[$i][$name], $this->genres[$i][$genreID], $this->genres[$i][$genreCount]);
-    }
-    echo "</ul><td><ul>";
-    for($i = 0; $i < count($this->reviews); $i++){
-      echo $this->formatReviewItem($this->reviews[$i][$title], $this->reviews[$i][$reviewID], $this->reviews[$i][$date]);
-    }
-    echo "</ul></td></table></main></body>";
   }
 
-  function set($genres, $reviews)
+  function set()
   {
-    $this->genres = $genres;
-    $this->reviews = $reviews;
+    
   }
 
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace coolNameForYourGroup\hw3\src\views\helpers;
+namespace goldenFeathers\hw4\src\views\helpers;
 
 class Helper{
 

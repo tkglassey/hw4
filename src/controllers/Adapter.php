@@ -1,6 +1,6 @@
 <?php
 
-namespace goldenFeathers\hw3\src\controllers;
+namespace goldenFeathers\hw4\src\controllers;
 
 abstract class Adapter
 {
