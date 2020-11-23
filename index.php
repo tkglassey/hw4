@@ -1,6 +1,6 @@
 <?php
-namespace coolNameForYourGroup\hw3;
-use coolNameForYourGroup\hw3\src\controllers as control;
+namespace goldenFeathers\hw3;
+use goldenFeathers\hw3\src\controllers as control;
 
 # echo getcwd();
 if(!empty($_GET['c'])){

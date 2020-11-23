@@ -1,6 +1,6 @@
 <?php
 
-namespace coolNameForYourGroup\hw3\src\views;
+namespace goldenFeathers\hw3\src\views;
 
 require_once("View.php");
 

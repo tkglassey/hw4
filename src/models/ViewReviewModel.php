@@ -1,6 +1,6 @@
 <?php
 
-namespace coolNameForYourGroup\hw3\src\models;
+namespace goldenFeathers\hw3\src\models;
 
 require_once("Model.php");
 

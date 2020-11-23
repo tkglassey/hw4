@@ -1,8 +1,8 @@
 <?php
-namespace coolNameForYourGroup\hw3\src\controllers;
+namespace goldenFeathers\hw3\src\controllers;
 require_once("./src/controllers/Adapter.php");
 
-use coolNameForYourGroup\hw3\src\models as models;
+use goldenFeathers\hw3\src\models as models;
 
 class DeleteReview extends Adapter{
 

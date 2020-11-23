@@ -1,9 +1,9 @@
 <?php
 
-namespace coolNameForYourGroup\hw3\src\models;
+namespace goldenFeathers\hw3\src\models;
 
 
-use coolNameForYourGroup\hw3\src\configs as config;
+use goldenFeathers\hw3\src\configs as config;
 class Model
 {
   protected $db;
