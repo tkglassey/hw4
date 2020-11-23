@@ -2,9 +2,7 @@
 
 namespace goldenFeathers\hw4\src\views;
 
-require_once("View.php");
-
-class LandingView extends View{
+class LandingView{
   private $genres;
   private $reviews;
   private $genreCounts;

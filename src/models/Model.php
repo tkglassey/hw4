@@ -2,7 +2,6 @@
 
 namespace goldenFeathers\hw4\src\models;
 
-
 use goldenFeathers\hw4\src\configs as config;
 class Model
 {

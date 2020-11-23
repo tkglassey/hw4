@@ -1,0 +1,18 @@
+Setting up the project: 1
+This has a multitude of steps, involving setting up composer, changing the names, and probably setting up the project.
+
+Getting Composer to work: 2
+Just because everything is set up doesn't mean it works. I need to get the composer to actually do thing properly, which it doesn't want to to with MAMP...
+I want to die from this step alone.
+
+COMPOSER AUTOLOAD DOESN'T FUCKING WORK 10
+FUCK THIS
+FUCK YOU
+FUCK IT
+I HATE THIS FUCKING CLASS AND THESE FUCKING ASSIGNMENTS THAT NEVER WORK PROPERLY
+FUCK MAKING WEBSITE I HOPE I NEVER DO THIS SHIT FOR THE REST OF MY GOD DAMN LIFE
+I'M JUST GOING TO FUCKING DO EVERYTHING IN GOD DAMN HTML IN THE FUTURE
+
+Composer Autoload 4
+After being unable to ever get it to recognize namespaces with the psr-4, I gave up and decided to manually load every file. Because I'm not wasting 5 more
+hours troubleshooting this stuff when technically nothing on the requirements says I have to do it like that.

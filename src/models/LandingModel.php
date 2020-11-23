@@ -2,9 +2,8 @@
 
 namespace goldenFeathers\hw4\src\models;
 
-require_once("Model.php");
 
-class LandingModel extends Model{
+class LandingModel{
 
   function getGenres(){
   }
@@ -19,10 +18,8 @@ class LandingModel extends Model{
   }
 
   function __construct(){
-    parent::__construct();
   }
 
   function __destruct(){
-    parent::__destruct();
   }
 }

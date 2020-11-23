@@ -1,12 +1,8 @@
 <?php
 
 namespace goldenFeathers\hw4\src\controllers;
-require_once("./src/controllers/Adapter.php");
 
-use goldenFeathers\hw4\src\views as views;
-use goldenFeathers\hw4\src\models as models;
-
-class LandingAdapter extends Adapter
+class LandingAdapter
 {
     private $view;
     private $model;
@@ -16,12 +12,10 @@ class LandingAdapter extends Adapter
     $this->view->render();
   }
 
-  function __construct()
+  function __construct($view, $model)
   {
-    require_once("./src/views/LandingView.php");
-    $this->view = new views\LandingView();
+    $this->view = new $view();
 
-    require_once("./src/models/LandingModel.php");
-    $this->model = new models\LandingModel();
+    $this->model = new $model();
   }
 }

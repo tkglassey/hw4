@@ -6,5 +6,4 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'goldenFeathers\\hw4\\' => array($baseDir . '/src'),
 );

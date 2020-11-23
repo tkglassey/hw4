@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '2d64ddedf997d1cfeb49ffbcafbee2c26138624a',
+    'reference' => '1ab62b2b5366dd2fb14c87398b7d8103e88bcf37',
     'name' => 'goldenfeathers/hw4',
   ),
   'versions' => 
@@ -31,7 +31,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '2d64ddedf997d1cfeb49ffbcafbee2c26138624a',
+      'reference' => '1ab62b2b5366dd2fb14c87398b7d8103e88bcf37',
     ),
     'monolog/monolog' => 
     array (

@@ -6,18 +6,10 @@ namespace Composer\Autoload;
 
 class ComposerStaticInitb465a85236434a0ea100171ec447319f
 {
-    public static $prefixLengthsPsr4 = array (
-        'g' => 
-        array (
-            'goldenFeathers\\hw4\\' => 19,
-        ),
-    );
-
-    public static $prefixDirsPsr4 = array (
-        'goldenFeathers\\hw4\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
-        ),
+    public static $files = array (
+        '5da3ea9bf47511d96580077866c24d25' => __DIR__ . '/../..' . '/src/controllers/LandingAdapter.php',
+        '70a6038dda0d7ae0da2eddd1fe4e059e' => __DIR__ . '/../..' . '/src/views/LandingView.php',
+        '9e8c6d2ea985ab5e0183275f34b71538' => __DIR__ . '/../..' . '/src/models/LandingModel.php',
     );
 
     public static $prefixesPsr0 = array (
@@ -37,8 +29,6 @@ class ComposerStaticInitb465a85236434a0ea100171ec447319f
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitb465a85236434a0ea100171ec447319f::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitb465a85236434a0ea100171ec447319f::$prefixDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInitb465a85236434a0ea100171ec447319f::$prefixesPsr0;
             $loader->classMap = ComposerStaticInitb465a85236434a0ea100171ec447319f::$classMap;
 
