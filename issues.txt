@@ -5,14 +5,22 @@ Getting Composer to work: 2
 Just because everything is set up doesn't mean it works. I need to get the composer to actually do thing properly, which it doesn't want to to with MAMP...
 I want to die from this step alone.
 
-COMPOSER AUTOLOAD DOESN'T FUCKING WORK 10
-FUCK THIS
-FUCK YOU
-FUCK IT
-I HATE THIS FUCKING CLASS AND THESE FUCKING ASSIGNMENTS THAT NEVER WORK PROPERLY
-FUCK MAKING WEBSITE I HOPE I NEVER DO THIS SHIT FOR THE REST OF MY GOD DAMN LIFE
-I'M JUST GOING TO FUCKING DO EVERYTHING IN GOD DAMN HTML IN THE FUTURE
+COMPOSER AUTOLOAD DOESN'T * WORK 10
+* THIS
+* YOU
+* IT
+I HATE THIS FUCKING CLASS AND THESE * ASSIGNMENTS THAT NEVER WORK PROPERLY
+* MAKING WEBSITE I HOPE I NEVER DO THIS * FOR THE REST OF MY * LIFE
+I'M JUST GOING TO FUCKING DO EVERYTHING IN * HTML IN THE FUTURE
 
 Composer Autoload 4
 After being unable to ever get it to recognize namespaces with the psr-4, I gave up and decided to manually load every file. Because I'm not wasting 5 more
 hours troubleshooting this stuff when technically nothing on the requirements says I have to do it like that.
+"autoload": {
+        "psr-4": {
+            "goldenFeathers\hw4\\": ["src/"]
+        }
+    }
+
+Just make the damn website look proper 5
+Screw organizing it properly, I don't care anymore. I'll take the few points. I tried organizing how it was wanted last time, got 5.5 points why suffer for the sake of 3 extra points.
