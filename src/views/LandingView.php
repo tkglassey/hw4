@@ -16,23 +16,21 @@ class LandingView{
       <link rel="stylesheet" href="./src/styles/stylesheet.css">
       <style>
         .grid3x3{
-        width:300px;
-        height:300px;
+        width:375px;
+        height:375px;
         clear:both;
         }
         .grid3x3>div{
-        width:100px;
-        height:100px;
+        width:120px;
+        height:120px;
         float:left;
-        line-height:100px;
+        line-height:120px;
         text-align:center;
-        
+        border: 1px solid transparent;
         }
         .grid3x3>div>img{
         display:inline-block;
         vertical-align:middle;
-        max-width:80%;
-        max-height:80%;
         }
       </style>
     </head>
@@ -45,7 +43,7 @@ class LandingView{
       </form>
       <div id="board" class = "grid3x3">
       <?
-        for($j = 0; $j < 8; $j++) {
+        for($j = 0; $j < 9; $j++) {
           ?><div id= "piece<?=$j?>" onclick="selectTile(id)"> 
           <img id="pieceImg<?=$j?>" src="./src/resources/active_image<?=$this->arr[$j]?>.jpg" style="float:left">
           </div> <?

@@ -14,6 +14,7 @@ class LandingAdapter
     $this->view->render();
     ?>
     <script>
+    var selected = [];
     function checkSubmit() {
       var file = document.getElementById('fileToUpload').files[0];
       if(file && file.size < 2097152) // 2097152 is 2MB
@@ -30,8 +31,18 @@ class LandingAdapter
       }
     }
 
-  function selectTile(tile) {
-    alert(tile);
+  function selectTile(tileID) {
+    var tile = document.getElementById(tileID);
+    if(selected.includes(tileID)){
+        tile.style.border = "1px solid transparent";
+        selected.pop();
+    }
+    else{
+        tile.style.border = "1px solid black";
+        selected.push(tileID);
+    }
+    if (selected.length == 2){
+    }
   }
     </script>
     <?
