@@ -13,9 +13,19 @@ class LandingAdapter
     ?>
     <script>
     function checkSubmit() {
-      var x = document.forms["imageUpload"]["fileToUpload"].value;
-      alert(x);
-      return false;
+      var file = document.getElementById('fileToUpload').files[0];
+      if(file && file.size < 2097152) // 2097152 is 2MB
+      {
+      } 
+      else if (file) {
+        alert("File is over 2 MB")
+        return false;
+      }
+      else
+      {
+        alert("No file submitted")
+        return false;
+      }
     }
     </script>
     <?
