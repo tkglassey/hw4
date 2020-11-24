@@ -39,6 +39,3 @@ Allow you to swap tiles
 
 Check correctness 10
 Actually allow the puzzle to be solved
-
-Replace image 11
-Replace image with one from folder

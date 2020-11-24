@@ -34,16 +34,27 @@ class LandingAdapter
   function selectTile(tileID) {
     var tile = document.getElementById(tileID);
     if(selected.includes(tileID)){
-        tile.style.border = "1px solid transparent";
-        selected.pop();
+      tile.style.border = "1px solid transparent";
+      selected.pop();
     }
     else{
-        tile.style.border = "1px solid black";
-        selected.push(tileID);
+      tile.style.border = "1px solid black";
+      selected.push(tileID);
     }
-    if (selected.length == 2){
+    if (selected.length >= 2){
+      var pic1 = document.getElementById("pieceImg" + selected[0]);
+      var pic2 = document.getElementById("pieceImg" + selected[1]);
+      tile2 = document.getElementById(selected[0]);
+      var temp = pic1.src;
+      pic1.src = pic2.src;
+      pic2.src = temp;
+      tile.style.border = "1px solid transparent";
+      selected.pop();
+      tile2.style.border = "1px solid transparent";
+      selected.pop();
     }
   }
+
     </script>
     <?
   }

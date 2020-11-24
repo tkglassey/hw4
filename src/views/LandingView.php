@@ -44,7 +44,7 @@ class LandingView{
       <div id="board" class = "grid3x3">
       <?
         for($j = 0; $j < 9; $j++) {
-          ?><div id= "piece<?=$j?>" onclick="selectTile(id)"> 
+          ?><div id= "<?=$j?>" onclick="selectTile(id)"> 
           <img id="pieceImg<?=$j?>" src="./src/resources/active_image<?=$this->arr[$j]?>.jpg" style="float:left">
           </div> <?
         }
