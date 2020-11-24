@@ -34,6 +34,9 @@ Have an active image
 Display Jigsaw 8
 Display image as a jigsaw
 
+CSS background-position should be used to draw the appropriate portion of the active_image.jpg into each tile. 8.5
+Giving up on this task because I don't understand it.
+
 Interact with jigsaw 9
 Allow you to swap tiles
 
