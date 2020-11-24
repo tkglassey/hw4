@@ -80,7 +80,7 @@ if(isset($_POST["submit"])) {
           $arr[$index] = $arr[$i];
           $arr[$i] = $temp;
         }
-        file_put_contents($target_dir . "active_image.txt", serialize($array));
+        file_put_contents($target_dir . "active_image.txt", serialize($arr));
       } else {
         $log->info("There was an error uploading the file.");
       }
