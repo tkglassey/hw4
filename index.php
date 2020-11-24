@@ -13,9 +13,37 @@ else{
   $controller = "LandingView"; #if no controller is set then default to landing view
 }
 
-$view = new view\LandingView();
-$model = new model\LandingModel();
-$controller = new control\LandingAdapter($view, $model);
+if($controller == "LandingView"){
+  $view = new view\LandingView();
+  $model = new model\LandingModel();
+  $controller = new control\LandingAdapter($view, $model);
+}
+else{
+  $view = new view\LandingView();
+  $model = new model\LandingModel();
+  $controller = new control\LandingAdapter($view, $model);
+}
 
+$target_dir = "uploads/";
+$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+$uploadOk = 1;
+$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+// Check if image file is a actual image or fake image
+if(isset($_POST["submit"])) {
+  $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+  if($check !== false) {
+    echo "File is an image - " . $check["mime"] . ".";
+    $uploadOk = 1;
+  } else {
+    echo "File is not an image.";
+    $uploadOk = 0;
+  }
+}
+
+// Check if file already exists
+if (file_exists($target_file)) {
+  echo "Sorry, file already exists.";
+  $uploadOk = 0;
+}
 
 $controller->run();

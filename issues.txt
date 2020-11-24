@@ -22,7 +22,23 @@ hours troubleshooting this stuff when technically nothing on the requirements sa
         }
     }
 
-Just make the damn website look proper 5
-Screw organizing it properly, I don't care anymore. I'll take the few points. 
-I tried organizing how it was wanted last time, got 5.5 points why suffer for the sake of 3 extra points. I'll take my 2 or whatever the hell this trashfire is worth.
+Uploading image 5
+Allow the program to upload images.
 
+Process images 6
+Proces the images correctly
+
+Active image 7
+Have an active image
+
+Display Jigsaw 8
+Display image as a jigsaw
+
+Interact with jigsaw 9
+Allow you to swap tiles
+
+Check correctness 10
+Actually allow the puzzle to be solved
+
+Replace image 11
+Replace image with one from folder
