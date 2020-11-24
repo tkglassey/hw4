@@ -24,14 +24,7 @@ class LandingView{
       </form>
       <div id="board">
       <?
-        for($j = 0; $j < 8; $j++) {
-          $x = $this->arr[$j]%3;
-          $y = floor($this->arr[$j]/3)
-          ?><div id=<?"piece".$j ?> > 
-          <?$im2 = imagecrop($this->img, ['x' => $x*120, 'y' => $y*120, 'width' => 120, 'height' => 120]);
-          imagepng($im2);?>
-          </div> <?
-        }
+        
       ?>
       </div>
     </body>

@@ -80,7 +80,15 @@ if(isset($_POST["submit"])) {
           $arr[$index] = $arr[$i];
           $arr[$i] = $temp;
         }
+        $im = imagecreatefromjpeg($target_dir . "active_image.jpg");
         file_put_contents($target_dir . "active_image.txt", serialize($arr));
+        for($j = 0; $j < 9; $j++) {
+          $x = $j%3;
+          $y = floor($j/3);
+          $im2 = imagecrop($im, ['x' => $x*120, 'y' => $y*120, 'width' => 120, 'height' => 120]);
+          imagejpeg($im2, $target_dir . "active_image". $j . ".jpg");
+        }
+        imagedestroy($im);
       } else {
         $log->info("There was an error uploading the file.");
       }
