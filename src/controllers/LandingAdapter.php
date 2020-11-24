@@ -49,10 +49,17 @@ class LandingAdapter
       pic1.src = pic2.src;
       pic2.src = temp;
       tile.style.border = "1px solid transparent";
-      selected.pop();
       tile2.style.border = "1px solid transparent";
-      selected.pop();
+      solve(selected);
     }
+  }
+  
+  function solve(selected) {
+    var request = new XMLHttpRequest();
+    request.open("POST", "./src/models/AjaxModel.php", true);
+    request.send(JSON.stringify(selected));
+    selected.pop();
+    selected.pop();
   }
 
     </script>
