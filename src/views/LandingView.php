@@ -16,7 +16,10 @@ class LandingView{
   <body>
     <main>
     <h1>Community Jigsaw</h1>
-    <form>
+    <form action="index.php" method="post" enctype="multipart/form-data">
+      <label>New Image: </label>
+      <input type="file" id='fileToUpload' name="fileToUpload" accept=".jpg,.png,.gif">
+      <input type="submit" name="a" value="upload" onsubmit="return checkSubmit()">
     </form>
     <?php
   }
