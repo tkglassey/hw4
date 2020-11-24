@@ -29,6 +29,10 @@ class LandingAdapter
         return false;
       }
     }
+
+  function selectTile(tile) {
+    alert(tile);
+  }
     </script>
     <?
   }
