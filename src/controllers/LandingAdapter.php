@@ -10,8 +10,7 @@ class LandingAdapter
   function run(){
     $target_dir = dirname(__FILE__) . "/../resources/";
     $arr = unserialize(file_get_contents($target_dir . "active_image.txt"));
-    $img = imagecreatefromjpeg($target_dir . "active_image.jpg");
-    $this->view->set($arr, $img);
+    $this->view->set($arr);
     $this->view->render();
     ?>
     <script>
