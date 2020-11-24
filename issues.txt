@@ -43,5 +43,5 @@ Allow you to swap tiles
 Get Ajax to work 9.5
 Massive pain in the *
 
-Check correctness 10
+Check correctness 10 --- DEFINITELY NOT DONE
 Actually allow the puzzle to be solved
