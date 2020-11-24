@@ -73,7 +73,14 @@ if(isset($_POST["submit"])) {
       imagedestroy($im);
       if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_dir . "active_image.jpg")) {
         $log->info("The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded.");
-        
+        $arr = range(0, 8);
+        for($i = 0; $i < 8; $i++) {
+          $index = rand ($i + 1, 8);
+          $temp = $arr[$index];
+          $arr[$index] = $arr[$i];
+          $arr[$i] = $temp;
+        }
+        file_put_contents($target_dir . "active_image.txt", serialize($array));
       } else {
         $log->info("There was an error uploading the file.");
       }
