@@ -8,7 +8,10 @@ class LandingAdapter
     private $model;
 
   function run(){
-    $this->view->set();
+    $target_dir = dirname(__FILE__) . "/../resources/";
+    $arr = unserialize(file_get_contents($target_dir . "active_image.txt"));
+    $img = imagecreatefromjpeg($target_dir . "active_image.jpg");
+    $this->view->set($arr, $img);
     $this->view->render();
     ?>
     <script>
@@ -33,8 +36,8 @@ class LandingAdapter
 
   function __construct($view, $model)
   {
-    $this->view = new $view();
+    $this->view =  $view;
 
-    $this->model = new $model();
+    $this->model = $model;
   }
 }

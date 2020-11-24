@@ -32,7 +32,7 @@ else{
 if(isset($_POST["submit"])) {
   $log = new Logger('logger');
   $log->pushHandler(new StreamHandler('./src/resources/jigsaw.log', Logger::INFO));
-  $target_dir = "src/resources/";
+  $target_dir = "./src/resources/";
   $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
   $uploadOk = 1;
   $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
