@@ -19,7 +19,7 @@ class LandingView{
     <form name="imageUpload" action="index.php" method="post" enctype="multipart/form-data" onsubmit="return checkSubmit()">
       <label>New Image: </label>
       <input type="file" id='fileToUpload' name="fileToUpload" accept=".jpg,.png,.gif">
-      <input type="submit" name="a" value="upload">
+      <input type="submit" name="submit" value="upload">
     </form>
     
     <?php
