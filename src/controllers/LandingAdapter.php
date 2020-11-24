@@ -10,6 +10,15 @@ class LandingAdapter
   function run(){
     $this->view->set();
     $this->view->render();
+    ?>
+    <script>
+    function checkSubmit() {
+      var x = document.forms["imageUpload"]["fileToUpload"].value;
+      alert(x);
+      return false;
+    }
+    </script>
+    <?
   }
 
   function __construct($view, $model)

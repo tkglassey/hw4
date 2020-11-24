@@ -13,14 +13,9 @@ else{
   $controller = "LandingView"; #if no controller is set then default to landing view
 }
 
-if($controller == "LandingView"){
-  $view = new view\LandingView();
-  $model = new model\LandingModel();
-  $controller = new control\LandingAdapter($view, $model);
-}
-else{
-  $controller = new control\LandingAdapter();
-}
+$view = new view\LandingView();
+$model = new model\LandingModel();
+$controller = new control\LandingAdapter($view, $model);
 
 
 $controller->run();
